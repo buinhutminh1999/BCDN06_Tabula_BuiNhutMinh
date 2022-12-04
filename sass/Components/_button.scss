@@ -1,0 +1,15 @@
+.a-btn{
+    @include styleABG($color-pink-1,$color-white,$pd-x,$pd-y);
+    border-radius: $bd-rd;
+    font-size: 0.9em;
+    overflow: hidden;
+    line-height: 1;
+    margin: 6px;
+    cursor: pointer;
+    &:hover{
+        color: #b61984;
+        box-shadow: 0 0 0 1px #b61984 inset;
+        background: #fff;
+        transition: all 0.3s ease;
+    }
+}

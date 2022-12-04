@@ -1,0 +1,19 @@
+@mixin styleText($fs,$fw,$color,$lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    line-height: $lh;
+}
+
+@mixin styleText2($fs,$fw,$color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+
+}
+
+@mixin styleABG($bg,$color,$pd-x,$pd-y) {
+    box-shadow: 0 0 0 3em $bg inset;
+    color: $color;
+    padding: $pd-x $pd-y;
+}

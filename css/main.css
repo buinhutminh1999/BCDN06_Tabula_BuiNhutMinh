@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  line-height: 1.8em;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.a-btn {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  color: #fff;
+  padding: 1.1em 1.5em;
+  border-radius: 50px;
+  font-size: 0.9em;
+  overflow: hidden;
+  line-height: 1;
+  margin: 6px;
+  cursor: pointer;
+}
+.a-btn:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+header {
+  position: fixed;
+  background: transparent;
+  z-index: 10;
+  width: 100%;
+}
+header .header__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .header__content .logo img {
+  width: 80px;
+}
+header .header__content .header__right {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .header__content .header__right .header__info {
+  display: flex;
+  align-items: center;
+}
+header .header__content .header__right .header__info i {
+  margin: 0 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+header .header__content .header__right .header__info i:hover {
+  color: #b61984;
+  transition: all 0.5s;
+}
+header .header__right ul {
+  padding-left: 50px;
+}
+header .header__right ul li {
+  list-style: none;
+  line-height: 80px;
+  padding: 0 56px 0 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+header .header__right ul li:hover a {
+  color: #b61984;
+  transition: 300ms ease all;
+}
+header .header__right ul li a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  line-height: 80px;
+}
+header .header__right ul li::after {
+  content: "";
+  position: absolute;
+  background-color: #b61984;
+  left: 20%;
+  border-radius: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5 ease all;
+}
+header .header__right ul .active::after {
+  content: "";
+  position: absolute;
+  background-color: #b61984;
+  left: 20%;
+  border-radius: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5 ease all;
+  width: 10px;
+  height: 10px;
+}
+header .header__right ul li:hover::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #b61984;
+}
+
+.carousel {
+  background-image: url(../img/Violet_top_left_wave.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.carousel .carousel__img {
+  background-image: url(../img/yellow_top_wave_01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+}
+.carousel .carousel__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+.carousel .carousel__content .carousel__left p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  color: #b61984;
+  font-weight: 600;
+}
+.carousel .carousel__content .carousel__left h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.info {
+  padding-top: 2em;
+  background-color: #dcd1f1;
+  background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.info .info__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.info .info__content .info__item {
+  padding: 10px 20px;
+}
+.info .info__content .info__item .info__bg {
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+.info .info__content .info__item .info__bg .info__text {
+  margin-top: 20px;
+}
+.info .info__content .info__item .info__bg .info__text p:first-of-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.info .info__content .info__item .info__bg .info__text h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.info .info__content .info__item .info__bg {
+  cursor: pointer;
+}
+.info .info__content .info__item .info__bg .info__img {
+  overflow: hidden;
+}
+.info .info__content .info__item .info__bg .info__img:hover img {
+  transition: transform 5s, filter 0.5s ease-in;
+  transform: scale(1.1);
+}
+.info .info__content .info__item .info__bg:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 0.5s ease-in;
+}
+
+.course {
+  padding-top: 2em;
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+.course .course__content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.course .course__content .course__item-right {
+  padding: 0 20px;
+}
+.course .course__content .course__item-right .course__bg {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 0 25px;
+  height: 486px;
+}
+.course .course__content .course__item-right .course__bg h1 {
+  margin-bottom: 40px;
+}
+.course .course__content .course__item-right .course__bg .form-1 {
+  padding-right: 0;
+}
+.course .course__content .course__item-right .course__bg .form-1 .form__input {
+  border-radius: 50px;
+  color: inherit;
+  padding: 1em 1em 1em 3.5em;
+  font-size: 0.8em;
+  height: 3.7em;
+}
+.course .course__content .course__item-right .course__bg .form-1 .form__input:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.course .course__content .course__item-right .course__bg .form-1 span {
+  padding: 0 5px;
+}
+.course .course__content .course__item-right .course__bg .form-2 .dropdown button {
+  border-radius: 50px;
+  font-size: 0.8em;
+  opacity: 0.8;
+  padding: 0 0 0 3em;
+  width: 100%;
+  background-color: transparent;
+  color: inherit;
+  text-align: left;
+  height: 3.7em;
+}
+.course .course__content .course__item-right .course__bg .form-2 .dropdown button:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.course .course__content .course__item-right .course__bg .form-2 .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #b61984;
+}
+
+.footer {
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.footer .footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

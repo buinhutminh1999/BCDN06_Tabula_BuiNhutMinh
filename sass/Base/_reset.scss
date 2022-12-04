@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Roboto",Arial,Helvetica,sans-serif;
+    @include styleText($fs-10,$fw-3,$color-black-1,$lh-2);
+}
+
+ul li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}

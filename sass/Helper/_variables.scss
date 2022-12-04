@@ -1,0 +1,79 @@
+//? Khi nào khai báo biến
+//? => các giá trị dễ bị thay đổi khi client đổi yêu cầu
+//? => các giá trị được dùng nhiều chỗ (2 chỗ trở lên)
+
+
+//white color
+$color-white: #fff;
+
+//pink color
+$color-pink-1: #b61984;
+
+
+//black color
+$color-black-1: #181818;
+$color-black-2: #191919;
+
+//color-pink
+$color-pink-1: #b61984;
+
+//font size
+$fs-10: 15px;
+$fs-1: 13px;
+$fs-2: 0.9rem;
+$fs-3: 1.1rem;
+$fs-4: 3.8rem;
+$fs-5: 0.75rem;
+$fs-6: 1.55rem;//
+$fs-7: 2.5rem;
+$fs-8: 0.8em;
+
+//font weight
+$fw-1: 600;
+$fw-2: 700;
+$fw-3: 400;
+
+//line height
+$lh-1: 80px;
+$lh-2: 90px;
+$lh-2: 1.8em;
+$lh-3: 1;
+
+//letter spacing
+$ls-1: 0.015rem;
+$ls-2: 0.03rem;
+
+//Padding
+$pd-1: 50px;
+$pd-2: 30px;
+$pd-3: 3em;
+
+
+//padding btn
+$pd-x: 1.1em ;
+$pd-y:1.5em;
+
+
+//Margin
+$mg-1: 0.5rem;
+$mg-2: 25px;
+$mg-3: 70px;
+$mg-4: 60px;
+
+//border radius
+$bd-rd: 50px;
+
+//border
+$bd-1: 2px;
+$bd-2: 8px;
+
+
+//transition
+// $trans: all 0.5
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);

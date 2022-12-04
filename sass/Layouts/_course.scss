@@ -1,0 +1,73 @@
+.course {
+    padding-top: 2em;
+    background-image: url(../img/accent_bottom_wave_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    // width: 100%;
+    .course__content {
+        max-width: 1040px;
+        margin: 0 auto;
+        .course__item-right {
+            padding: 0 20px;
+            .course__bg {
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+                padding: 0 25px;
+                height: 486px;
+                h1 {
+                    margin-bottom: 40px;
+                }
+                .form-1 {
+                    padding-right: 0;
+                    .form__input {
+                        border-radius: 50px;
+                        color: inherit;
+                        padding: 1em 1em 1em 3.5em;
+                        font-size: 0.8em;
+                        height: 3.7em;
+                        &:focus {
+                            box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                    span {
+                        padding: 0 5px;
+                    }
+                }
+
+                .form-2 {
+                    .dropdown {
+                        button {
+                            border-radius: 50px;
+                            font-size: 0.8em;
+                            opacity: 0.8;
+                            padding: 0 0 0 3em;
+                            width: 100%;
+                            background-color: transparent;
+                            color: inherit;
+                            text-align: left;
+                            height: 3.7em;
+
+                             &:focus {
+                            box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                        }
+                           
+                        }
+                        .dropdown-menu {
+                            .dropdown-item {
+                                &:hover {
+                                    color: $color-pink-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

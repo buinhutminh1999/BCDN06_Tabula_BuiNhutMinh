@@ -1,0 +1,10 @@
+.footer{
+    background-image: url(../img/footer_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    .footer__content{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

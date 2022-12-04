@@ -1,0 +1,51 @@
+.info {
+    padding-top: 2em;
+    background-color: #dcd1f1;
+    background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .info__content {
+        max-width: 1200px;
+        margin: 0 auto;
+        .info__item {
+            padding: 10px 20px;
+            .info__bg {
+                border-radius: 10px;
+                background: $color-white;
+                overflow: hidden;
+
+                .info__text {
+                    margin-top: 20px;
+                    p:first-of-type {
+                        @include styleText2($fs-5, $fw-1, $color-pink-1);
+                    }
+                    h3 {
+                        font-weight: $fw-2;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+
+        .info__item {
+            .info__bg {
+                .info__img {
+                    overflow: hidden;
+                    &:hover {
+                        img {
+                            transition: transform 5s, filter 0.5s ease-in;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                cursor: pointer;
+                &:hover {
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+    }
+}

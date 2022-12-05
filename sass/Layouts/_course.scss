@@ -1,5 +1,5 @@
 .course {
-    padding-top: 2em;
+    padding-top: 4em;
     background-image: url(../img/accent_bottom_wave_01.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,6 +20,7 @@
                 height: 486px;
                 h1 {
                     margin-bottom: 40px;
+                    font-weight: $fw-2;
                 }
                 .form-1 {
                     padding-right: 0;
@@ -41,33 +42,87 @@
 
                 .form-2 {
                     .dropdown {
-                        button {
+                        #btnUpdate {
                             border-radius: 50px;
                             font-size: 0.8em;
                             opacity: 0.8;
-                            padding: 0 0 0 3em;
+                            padding: 0 3em 0 3em;
                             width: 100%;
                             background-color: transparent;
                             color: inherit;
                             text-align: left;
                             height: 3.7em;
 
-                             &:focus {
-                            box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
-                            border: 1px solid rgba(0, 0, 0, 0.3);
-                        }
-                           
+                            &:focus {
+                                box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+                                border: 1px solid rgba(0, 0, 0, 0.3);
+                            }
+
+                            &::after {
+                                color: $color-pink-1;
+                                opacity: 0.5;
+                                transition: 150ms ease transform, 150ms ease color;
+                            }
                         }
                         .dropdown-menu {
                             .dropdown-item {
+                                font-size: 0.8em;
+                                padding: 0 0 0 3em;
                                 &:hover {
                                     color: $color-pink-1;
+                                    background: $color-white;
                                 }
                             }
                         }
                     }
                 }
+                .form-group {
+                    textarea {
+                        padding: 1em 1em 1em 3.5em;
+                        height: 90px;
+                        line-height: 1.5;
+                        font-size: 0.8em;
+
+                        &:focus {
+                            box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                }
+
+                .course-btn {
+                    width: 150px;
+                    height: 48px;
+                    font-size: 0.8em;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
 }
+
+.form__input-name {
+    position: relative;
+    i {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        line-height: 1;
+        color: $color-pink-1;
+    }
+}
+
+.icon__select {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    line-height: 1;
+    color: $color-pink-1;
+    
+}
+
+

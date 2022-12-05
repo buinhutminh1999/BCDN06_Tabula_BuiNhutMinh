@@ -1,91 +1,91 @@
 header {
-        position: fixed;
-        background: transparent;
-        z-index: 10;
-        width: 100%;
-    .header__content {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        .logo {
-            img {
-                width: 80px;
-            }
-        }
-        .header__right {
-            display: flex;
-            justify-content: space-evenly;
-            .header__info {
-                display: flex;
-                align-items: center;
-                i {
-                    margin: 0 5px;
-                    font-size: 0.9em;
-                    cursor: pointer;
-                    &:hover {
-                        color: $color-pink-1;
-                        transition: all 0.5s;
-                    }
-                }
-            }
+    position: fixed;
+    background: transparent;
+    z-index: 10;
+    width: 100%;
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    .logo {
+        img {
+            width: 80px;
         }
     }
     .header__right {
-        ul {
-            padding-left: 50px;
-            li {
-                list-style: none;
-                line-height: $lh-1;
-                padding: 0 56px 0 0;
-                display: inline-block;
-                position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        .header__info {
+            display: flex;
+            align-items: center;
+            i {
+                margin: 0 5px;
+                font-size: 0.9em;
                 cursor: pointer;
                 &:hover {
-                    a {
-                        color: $color-pink-1;
-                        transition: 300ms ease all;
-                    }
-                }
-                a {
-                    @include styleText($fs-1, $fw-1, $color-black-1, $lh-1);
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #b61984;
-                    left: 20%;
-                    border-radius: 50%;
-                    bottom: 0;
-                    transform: translate(-50%, -50%);
-                    transition: 0.5 ease all;
-                }
-            }
-            .active {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: $color-pink-1;
-                    left: 20%;
-                    border-radius: 50%;
-                    bottom: 0;
-                    transform: translate(-50%, -50%);
-                    transition: 0.5 ease all;
-                    width: 10px;
-                    height: 10px;
-                }
-            }
-            li {
-                &:hover {
-                    &::after {
-                        content: "";
-                        width: 10px;
-                        height: 10px;
-                        background-color: #b61984;
-                    }
+                    color: $color-pink-1;
+                    transition: all 0.5s;
                 }
             }
         }
     }
+}
+.header__right {
+    ul {
+        padding-left: 50px;
+        li {
+            list-style: none;
+            line-height: $lh-1;
+            padding: 0 56px 0 0;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                a {
+                    color: $color-pink-1;
+                    transition: 300ms ease all;
+                }
+            }
+            a {
+                @include styleText($fs-1, $fw-1, $color-black-1, $lh-1);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: #b61984;
+                left: 20%;
+                border-radius: 50%;
+                bottom: 0;
+                transform: translate(-50%, -50%);
+                transition: 0.5 ease all;
+            }
+        }
+        .active {
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $color-pink-1;
+                left: 20%;
+                border-radius: 50%;
+                bottom: 0;
+                transform: translate(-50%, -50%);
+                transition: 0.5 ease all;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        li {
+            &:hover {
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background-color: #b61984;
+                }
+            }
+        }
+    }
+}
 }

@@ -164,7 +164,7 @@ header .header__right ul li:hover::after {
   margin: 0 auto;
 }
 .info .info__content .info__item {
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 .info .info__content .info__item .info__bg {
   border-radius: 10px;
@@ -199,7 +199,7 @@ header .header__right ul li:hover::after {
 }
 
 .course {
-  padding-top: 2em;
+  padding-top: 4em;
   background-image: url(../img/accent_bottom_wave_01.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -223,6 +223,7 @@ header .header__right ul li:hover::after {
 }
 .course .course__content .course__item-right .course__bg h1 {
   margin-bottom: 40px;
+  font-weight: 700;
 }
 .course .course__content .course__item-right .course__bg .form-1 {
   padding-right: 0;
@@ -241,22 +242,71 @@ header .header__right ul li:hover::after {
 .course .course__content .course__item-right .course__bg .form-1 span {
   padding: 0 5px;
 }
-.course .course__content .course__item-right .course__bg .form-2 .dropdown button {
+.course .course__content .course__item-right .course__bg .form-2 .dropdown #btnUpdate {
   border-radius: 50px;
   font-size: 0.8em;
   opacity: 0.8;
-  padding: 0 0 0 3em;
+  padding: 0 3em 0 3em;
   width: 100%;
   background-color: transparent;
   color: inherit;
   text-align: left;
   height: 3.7em;
 }
-.course .course__content .course__item-right .course__bg .form-2 .dropdown button:focus {
+.course .course__content .course__item-right .course__bg .form-2 .dropdown #btnUpdate:focus {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+.course .course__content .course__item-right .course__bg .form-2 .dropdown #btnUpdate::after {
+  color: #b61984;
+  opacity: 0.5;
+  transition: 150ms ease transform, 150ms ease color;
+}
+.course .course__content .course__item-right .course__bg .form-2 .dropdown .dropdown-menu .dropdown-item {
+  font-size: 0.8em;
+  padding: 0 0 0 3em;
+}
 .course .course__content .course__item-right .course__bg .form-2 .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #b61984;
+  background: #fff;
+}
+.course .course__content .course__item-right .course__bg .form-group textarea {
+  padding: 1em 1em 1em 3.5em;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+.course .course__content .course__item-right .course__bg .form-group textarea:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.course .course__content .course__item-right .course__bg .course-btn {
+  width: 150px;
+  height: 48px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__input-name {
+  position: relative;
+}
+.form__input-name i {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  line-height: 1;
+  color: #b61984;
+}
+
+.icon__select {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  line-height: 1;
   color: #b61984;
 }
 
@@ -265,8 +315,69 @@ header .header__right ul li:hover::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  color: white;
+  padding: 8em 0;
 }
 .footer .footer__content {
   max-width: 1200px;
   margin: 0 auto;
+}
+.footer .footer__content .footer__item {
+  padding: 0 40px;
+}
+.footer .footer__content .footer__item h5 {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+.footer .footer__content .footer__item .quicklink__text li,
+.footer .footer__content .footer__item .about__text li {
+  line-height: 1;
+  padding: 0.8em 0;
+  display: block;
+}
+.footer .footer__content .footer__item .quicklink__text li a,
+.footer .footer__content .footer__item .about__text li a {
+  color: #fff;
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer .footer__content .footer__item .footer__input form input {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding: 1em;
+  color: inherit;
+  height: 3.2em;
+  text-align: center;
+}
+.footer .footer__content .footer__item .footer__input form input:focus {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: right;
+  color: inherit;
+  transition: all 0.5 ease-in;
+}
+.footer .footer__content .footer__item .button__footer {
+  text-align: center;
+  height: 48px;
+}
+.footer .footer__content .footer__item .button__footer a {
+  box-shadow: 0 0 0 3em #b61984 inset;
+  border: 1px solid #fff;
+  display: block;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 1em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__content .footer__item .button__footer a:hover {
+  border: 1px solid #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  background: #fff;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

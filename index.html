@@ -35,7 +35,8 @@
                 <nav class="d-flex">
                     <div class="header__right">
                         <ul class="mb-0">
-                            <li><a>Home</a></li>
+                            <li><a>Home</a>
+                            </li>
                             <li><a class="active">About</a></li>
                             <li><a>Coures</a></li>
                             <li><a>Blog</a></li>
@@ -66,10 +67,10 @@
         <div class="carousel__content d-flex align-items-center">
             <div class="carousel__left col-6">
                 <p>ABOUT US</p>
-                <h1>The language
+                <h5>The language
                     <br>
                     teaching experts
-                </h1>
+                </h5>
             </div>
             <div class="carousel__right col-6">
                 <img src="./img/hero_team.png" alt="" class="w-100">
@@ -188,75 +189,92 @@
             <div class="col-5 course__item-right ">
                 <div class="course__bg d-flex  justify-content-center flex-column">
        
-                    <h1>Find Your Course</h1>
+                    <h5>Find Your Course</h5>
                     <form class="">
                             <div class="form-group d-flex form-1">
+                               <div class="form__input-name ">
+                                <i class="fa-solid fa-user"></i>
                                 <input type="text" class="form__input form-control" placeholder="Name">
+                               </div>
                                 <span></span>
+                 
+                                    <div class="form__input-name">
+                                        <i class="fa-solid fa-envelope"></i>
+                      
                                 <input type="text" class="form__input form-control" placeholder="Email">
+                                    </div>
                             </div>
                              <div class="form-group form-2">
-                                <!-- <div class="form-group dropdown">
-                                    <select id="inputState" class="form-control">
-                                      <option class="dropdown-item" selected >English</option>
-                                      <option class="dropdown-item">French</option>
-                                      <option class="dropdown-item">Spanish</option>
-                                      <option class="dropdown-item">German</option>
-                                    </select>
-                                  </div>
-                                  </div> -->
                                  <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" id="btnUpdate" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="English">
+                                    <button class="position-relative btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center" id="btnUpdate" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="English">
                                         English
                                     </button>
+                                    <div class="icon__select">
+                                        <i class="fa-solid fa-user-graduate"></i>
+                                    </div>
                                     <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
-                                      <button class="dropdown-item" id="buttonVal" type="button" value="eng">English</button>
-                                      <button class="dropdown-item" id="buttonVal" type="button" value="fr">French</button>
-                                      <button class="dropdown-item" id="buttonVal" type="button" value="sp">Spanish</button>
-                                      <button class="dropdown-item" id="buttonVal" type="button" value="ge">German</button>
+                                      <button class="dropdown-item" id="buttonVal" type="button">English</button>
+                                      <button class="dropdown-item" id="buttonVal" type="button">French</button>
+                                      <button class="dropdown-item" id="buttonVal" type="button">Spanish</button>
+                                      <button class="dropdown-item" id="buttonVal" type="button">German</button>
                                     </div>
                                   </div>
+                                 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group position-relative">
                                 <textarea class="form-control" placeholder="Message"></textarea>
+                                <div class="icon__select">
+                                    <i class="fa-regular fa-message"></i>
+                                </div>
                             </div>
+                           
                     </form>
-                    <a class=" a-btn">
+                    <a class="a-btn course-btn">
                         Send
                     </a>
 
                 </div>
             </div>
         </div>
-    </section>
+        <div></div>
 
+    </section>
     <footer class="footer">
-        <div class="row footer__content justify-content-center">
-            <div class="col-3">
-                <h1>Contact us
-                </h1>
+        <div class="row footer__content ">
+            <div class="col-3 footer__item">
+                <h5>Contact us
+                </h5>
                 <ul>
-                    <li><span>Franklin St, Greenpoint Ave</span></li>
-                    <li><span>+2342 5446 67</span></li>
-                    <li><span>Monday - Friday: 8 AM - 5 PM</span></li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Franklin St, Greenpoint Ave</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+2342 5446 67</span>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Monday - Friday: 8 AM - 5 PM</span>
+                    </li>
                 </ul>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-instagram"></i>
             </div>
-            <div class="col-3">
-                <h1>Quick Links</h1>
-                <ul>
+            <div class="col-3 footer__item">
+                <h5>Quick Links</h5>
+                <ul class="quicklink__text">
                     <li><a href="">Home</a></li>
                     <li><a href="">Courses</a></li>
                     <li><a href="">Schedule</a></li>
                     <li><a href="">Blog</a></li>
                 </ul>
             </div>
-            <div class="col-3">
-                <h1>About</h1>
-                <ul>
+            <div class="col-3 footer__item">
+                <h5>About</h5>
+                <ul class="about__text">
                     <li><a href="">About Us</a></li>
                     <li><a href="">Events</a></li>
                     <li><a href="">Get Quote</a></li>
@@ -264,19 +282,22 @@
                 </ul>
 
             </div>
-            <div class="col-3">
-                <h1>Newsletter</h1>
+            <div class="col-3 footer__item">
+                <h5>Newsletter</h5>
+             <div class="footer__input">
                 <form action="">
-                    <input type="text" class="form__input" placeholder="Your Email">
+                    <input type="text" class="form__input" placeholder="Your Email" id="check" onkeyup="checkInput()">
+                    <div class="validation__email">
+                      </div>
                 </form>
-                <a class=" a-btn">SUBSCRIBE</a>
-                <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Get Quote</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-
+                
+            </div>
+            <br>
+            <div class="button__footer">
+                <a class="a-btn" onclick="checkEmail()">SUBSCRIBE</a>
+            </div>
+            <div class="txtNofica">
+                
             </div>
         </div>
     </footer>
